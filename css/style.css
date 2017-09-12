@@ -41,6 +41,8 @@ header {
 
 #gAnalytics {
   height: 48px;
+  float: right;
+  margin-top: 5px;
 }
 
 section {
@@ -96,17 +98,16 @@ h3 {
 .form {
   margin-top: 30px;
   background-color: rgb(255,255,255);
-  height: 600px;
+  height: 635px;
   width: 360px;
   float: right;
 }
 
 .form h4 {
   font-family: 'Teko', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   color: rgb(144, 164, 174);
   text-align: center;
-  padding-bottom: 10px;
   font-weight: 300;
 }
 
@@ -125,9 +126,24 @@ h3 {
   .form-horizontal .form-group {
     margin-right: 0px;
     margin-left: 0px;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 .form-group p {
   font-size: 10px;
+}
+
+option {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.send {
+  background-color: rgb(250, 192, 46 );
+  color: rgb(255,255,255);
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  height: 50px;
 }
