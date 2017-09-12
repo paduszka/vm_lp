@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background-color: rgba(35, 35, 37,0.8);
+}
+
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: left;
+}
+
+#logo {
+    width: 120px;
+    margin-top: 15px;
+  }
