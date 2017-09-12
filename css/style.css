@@ -44,7 +44,7 @@ header {
 }
 
 section {
-  height: 650px;
+  height: 700px;
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,14 +54,14 @@ section {
   color: rgb(250, 192, 46 );
   font-family: 'Teko', sans-serif;
   font-size: 35px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .title h2 {
   color: rgb(144, 164, 174);
   font-family: 'Teko', sans-serif;
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .white {
@@ -70,9 +70,11 @@ section {
 
 h3 {
   font-family: 'Teko', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(255,255,255);
   padding-bottom: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .media-object {
@@ -80,14 +82,44 @@ h3 {
 }
 
 .label {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 20px;
   padding-top: 10px;
 }
 
 .label-info {
   background-color: rgb(33,150,243);
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.media-heading {
   margin-top: 14px;
+  margin-bottom: 5px;
+  }
+
+.form {
+  margin-top: 20px;
+  background-color: rgb(255,255,255);
+  height: 600px;
+  width: 360px;
+  float: right;
+}
+
+.form h4 {
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+  color: rgb(144, 164, 174);
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.control-label {
+  color: rgb(144, 164, 174);
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+input {
+  width: 200px;
 }

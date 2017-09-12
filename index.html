@@ -16,6 +16,7 @@
   <![enddif]-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oswald|Poppins|Teko" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -95,8 +96,50 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4 form">
+          <h4>Drop us a short note and we will contact
+          you to talk some analytics</h4>
+          <form action="#" class="form-horizontal">
+            <div class="form-group">
+              <label for="name" class="col-sm-1 control-label">Name*</label>
+              <div class="clearfix"></div>
+              <div class="col-sm-9">
+                <input type="text" required id="name" placeholder=" " class="form-control col-sm-2" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-1 control-label">E-&nbsp;mail*</label>
+              <div class="clearfix"></div>
+              <div class="col-sm-9">
+              <input type="email" required id="email" placeholder=" " class="form-control col-sm-2" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefon" class="col-sm-1 control-label">Phone*</label>
+              <div class="clearfix"></div>
+                <div class="col-sm-9">
+              <input type="tel" required id="telefon" placeholder=" "
+               class="form-control" />
+               </div>
+               <p>Make sure we can reach you, if email goes to spam</p>
+            </div>
+            <div class="form-group">
+              <label for="telefon" class="col-sm-1 control-label">Company</label>
+              <input type="text" required id="company" placeholder=" "
+               class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="service" class="col-sm-1 control-label">Service I'm interested in</label>
+              <select id="service">
+                <option value="ux">UX</option>
+                <option value="service2">service2</option>
+                <option value="service3">service3</option>
+              </select><br />
+            </div>
+            <div class="form-group">
 
+            </div>
+          </form>
         </div>
       </div>
     </div>
