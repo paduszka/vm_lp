@@ -8,23 +8,62 @@ body {
   padding: 0;
 }
 
-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 60px;
-  line-height: 60px;
-  color: #fff;
-  background-color: rgba(35, 35, 37,0.8);
+p {
+  font-size: 16px;
+  color: rgb(144, 164, 174);
+  font-family: 'Poppins', sans-serif;
 }
 
-.header__logo {
-  font-weight: 700;
-  padding: 0 25px;
+.rectangle {
+  height: 4px;
+  background-color: rgb(250, 192, 46 );
+  width: 30px;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
   float: left;
 }
 
 #logo {
-    width: 120px;
-    margin-top: 15px;
+    width: auto;
   }
+
+.google {
+  padding: 0 0;
+  float: right;
+}
+
+#gAnalytics {
+  height: 48px;
+}
+
+section {
+  height: 710px;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title h1 {
+  color: rgb(250, 192, 46 );
+  font-family: 'Teko', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.title h2 {
+  color: rgb(144, 164, 174);
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.white {
+  color: rgb(255,255,255)
+}
