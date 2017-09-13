@@ -34,6 +34,18 @@ header {
     width: auto;
   }
 
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact img {
+    width: 17px;
+    height: 17px;
+    margin-top: 22px;
+    margin-right: 10px;
+  }
+
 .google {
   padding: 0 0;
   float: right;

@@ -25,8 +25,13 @@
         <div class="col-md-5">
         <a href="#" class="logo"><img src="images/salestube_logo.png" alt="LOGO" id="logo" /></a>
         </div>
-        <div class="col-md-5">
-
+        <div class="col-md-2 contact">
+          <img src="images/telefon.png" alt="telefon" id="telefonIcon" />
+          <p>020 898 898 89</p>
+        </div>
+        <div class="col-md-3 contact">
+          <img src="images/at.png" alt="email" id="emailIcon" />
+          <p>hello-analytics@salestube.pl</p>
         </div>
         <div class="col-md-2">
         <a href="#" class="google"><img src="images/google_analytics.png" alt="Google Analytics Logo" id="gAnalytics" /></a>
@@ -120,7 +125,7 @@
               <label for="telefon" class="col-sm-1 control-label">Phone*</label>
                 <div class="clearfix"></div>
                 <div class="col-sm-12">
-                  <input type="tel" required id="telefon" placeholder=" "
+                  <input type="tel" required id="telefon" placeholder=" " pattern="\[0-9]{3}[0-9]{3}[0-9]{3}"
                class="form-control" />
                 </div>
                 <div class="clearfix"></div>
@@ -130,7 +135,7 @@
               <label for="telefon" class="col-sm-1 control-label">Company</label>
               <div class="clearfix"></div>
               <div class="col-sm-12">
-                <input type="text" required id="company" placeholder=" "
+                <input type="text" id="company" placeholder=" "
                class="form-control" />
               </div>
             </div>
