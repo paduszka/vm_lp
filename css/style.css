@@ -1,32 +1,44 @@
-html,
-body {
-  font-family: 'Montserrat', sans-serif;
+html, body {
   font-size: 1em;
   line-height: 1.4;
   height: 100%;
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
-p {
+p, a {
   font-size: 14px;
   color: rgb(144, 164, 174);
   font-family: 'Poppins', sans-serif;
 }
 
+h1, h2 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 100;
+}
+
+h4 {
+  font-family: 'Teko', sans-serif;
+    font-weight: 100;
+}
+
+.hidden { font-size: 0; }
+
 .rectangle {
   height: 4px;
-  background-color: rgb(250, 192, 46 );
+  background-color: rgb(250, 192, 46);
   width: 30px;
 }
 
- /*  HEADER  */
-
 header {
   height: 60px;
+  width: 100%;
   line-height: 60px;
   background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 999;
+
 }
 
 .logo {
@@ -34,24 +46,31 @@ header {
 }
 
 #logo {
-    width: auto;
-  }
+  width: auto;
+  height: auto;
+}
 
-  .contact {
-    display: flex;
-    flex-direction: row;
-  }
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .contact img {
-    width: 17px;
-    height: 17px;
-    margin-top: 22px;
-    margin-right: 10px;
-  }
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact img {
+  width: 17px;
+  height: 17px;
+  margin-top: 22px;
+  margin-right: 10px;
+}
 
 .google {
   padding: 0 0;
   float: right;
+  width: auto;
 }
 
 #gAnalytics {
@@ -60,89 +79,84 @@ header {
   margin-top: 5px;
 }
 
- /*  SECTION  */
-
 section {
-  width: 100%;
   height: 100%;
-  position: fixed;
+  width: 100%;
+  padding: 80px;
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-
+  position: fixed;
+  z-index: 9;
 }
 
-/*  MAIN TITLE  */
+@media only screen and (max-width: 1300px) {
+    section {
+        position: relative;
+        height: auto;
+        padding: 80px 10px;
+    }
+}
 
 .title h1 {
-  color: rgb(250, 192, 46 );
-  font-family: 'Teko', sans-serif;
+  color: rgb(250, 192, 46);
   font-size: 60px;
-  font-weight: 300;
+
 }
 
 .title h2 {
   color: rgb(144, 164, 174);
-  font-family: 'Teko', sans-serif;
   font-size: 30px;
-  font-weight: 300;
 }
 
 .white {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
-/*  LIST OF BENEFITS  */
-
- h2 {
-  font-family: 'Teko', sans-serif;
-  color: rgb(255,255,255);
-  font-weight: 300;
+h3 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
   text-transform: uppercase;
-  margin: 10px 0;
-}
-
-.media-object {
-  margin-right: 30px;
 }
 
 .label-info {
-	background-color: rgb(33,150,243);
-	font-weight: 300;
-	font-family: 'Teko', sans-serif;
+  background-color: rgb(33, 150, 243);
+  font-weight: 300;
+  font-family: 'Teko', sans-serif;
+  font-size: 20px
 }
 
 .label {
-  padding: .3em .6em .3em;
+  padding: .5em .6em .3em;
+  overflow: visible;
 }
 
 .media-heading {
   margin-top: 14px;
   margin-bottom: 5px;
-  }
+}
 
- /*  FORM  */
+.media-left {
+  vertical-align: baseline;
+  padding: 30px;
+}
+
+/* FOTMULARZ */
 
 .form {
   margin-top: 50px;
-  background-color: rgb(255,255,255);
-  height: 10%;
-  width: 380px;
-  float: right;
-  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  margin-bottom: 60px;
 }
 
 .form h4 {
-  font-family: 'Teko', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   color: rgb(144, 164, 174);
   text-align: center;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin: 0;
+  margin: 20px;
 }
 
 .control-label {
@@ -153,14 +167,14 @@ section {
 }
 
 .form-horizontal .control-label {
-    text-align: left;
-    margin-left: 0px;
-  }
+  text-align: left;
+  margin-left: 0px;
+}
 
-  .form-horizontal .form-group {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
+.form-horizontal .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: -15px;
 }
 
 .form-group p {
@@ -174,12 +188,67 @@ option {
 }
 
 .send {
-  background-color: rgb(250, 192, 46 );
-  color: rgb(255,255,255);
+  background-color: rgb(250, 192, 46);
+  color: rgb(255, 255, 255);
   font-family: 'Teko', sans-serif;
   font-weight: 300;
   font-size: 22px;
   height: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+  height: 60px;
+  width:100%;
+  line-height: 60px;
+  background-color: rgb(255, 255, 255);
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  z-index: 99;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+#telefonIcon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url('../images/telefon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#emailIcon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url('../images/at.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+    .contact a {
+      font-size: 0;
+}
+.media-left {
+  padding: 10px;
+}
+
+/* IE 6 */
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }

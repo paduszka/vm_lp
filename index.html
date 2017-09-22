@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-  <title>Salestube_lp</title>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Salestube_lp</title>
+
   <!--Boostrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <script src="https://oss.maxcdn/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn/respond/1.4.2/respond.min.js"></script>
   <![enddif]-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css" rel="stylesheet" />
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css" rel="stylesheet" />-->
   <link href="https://fonts.googleapis.com/css?family=Oswald|Poppins|Teko" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet">
 </head>
@@ -23,20 +23,15 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+
+        <div class="col-xs-8">
           <a href="#" class="logo"><img src="images/salestube_logo.png" alt="LOGO" id="logo" /></a>
         </div>
-        <div class="col-md-2 contact">
-          <img src="images/telefon.png" alt="telefon" id="telefonIcon" />
-          <p>020 898 898 89</p>
-        </div>
-        <div class="col-md-3 contact">
-          <img src="images/at.png" alt="email" id="emailIcon" />
-          <p>hello-analytics@salestube.pl</p>
-        </div>
-        <div class="col-md-2">
+
+        <div class="col-xs-4">
           <a href="#" class="google"><img src="images/google_analytics.png" alt="Google Analytics Logo" id="gAnalytics" /></a>
         </div>
+
       </div>
     </div>
   </header>
@@ -44,7 +39,7 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-md-7 title">
+        <div class="col-xs-12 col-sm-12 col-lg-8 title">
           <h1>We can boost your digital performance<br /><span class="white">with Google Analytics</span></h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -54,11 +49,10 @@
           <ul class="media-list">
             <li class="media">
               <div class="media-left">
-                <br />
                 <img src="images/icon_1.png" class="media-object" alt="Analytics consultancy" />
               </div>
               <div class="media-body">
-                <h2><span class="label label-info">Analytics consultancy</span></h2>
+                <h3><span class="label label-info">Analytics consultancy</span></h3>
                 <p>
                   Pay-as-you-go plans as well as flexible retainers starting from €2000 pm
                 </p>
@@ -66,11 +60,10 @@
             </li>
             <li class="media">
               <div class="media-left">
-                <br />
                 <img src="images/icon_2.png" class="media-object" alt="Auditing and implementation" />
               </div>
               <div class="media-body">
-                <h2><span class="label label-info">Auditing &amp; implementation</span></h2>
+                <h3><span class="label label-info">Auditing &amp; implementation</span></h3>
                 <p>
                   Are you using reliable and correct data? We make sure you do! We can either provide with set of recommendation you will implement on your own, or we are more than happy to do it for you!
                 </p>
@@ -78,11 +71,10 @@
             </li>
             <li class="media">
               <div class="media-left">
-                <br />
                 <img src="images/icon_3.png" class="media-object" alt="Auditing and implementation" />
               </div>
               <div class="media-body">
-                <h2><span class="label label-info">Dashboards &amp; reports</span></h2>
+                <h3><span class="label label-info">Dashboards &amp; reports</span></h3>
                 <p>
                   With proper visualisation we can provide you with actionable insights on your business' performance
                 </p>
@@ -90,11 +82,10 @@
             </li>
             <li class="media">
               <div class="media-left">
-                <br />
                 <img src="images/icon_4.png" class="media-object" alt="Attribiution modeling" />
               </div>
               <div class="media-body">
-                <h2><span class="label label-info">Custom attribiution modeling</span></h2>
+                <h3><span class="label label-info">Custom attribiution modeling</span></h3>
                 <p>
                   Your business is unique, so is your users path to conversion. We can reveal them for you!
                 </p>
@@ -102,10 +93,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-5">
+
+        <div class="col-xs-12 col-sm-12 col-lg-4">
           <div class="form">
-            <div class="col-sm-12">
-              <h4>Drop us a short note and we will<br />contact
+            <div class="col-12">
+              <h4>Drop us a short note and we will contact
             you to talk some analytics</h4>
             </div>
             <form action="#" class="form-horizontal">
@@ -154,18 +146,45 @@
                 <label for="textarea1" class="col-sm-12 control-label">Message</label>
                 <div class="clearfix"></div>
                 <div class="col-sm-12">
-                  <textarea class="form-control col-sm-12" id="textarea" rows="3"></textarea>
+                  <textarea class="form-control col-12" id="textarea" rows="3"></textarea>
                 </div>
               </div>
-              <div class="col-sm-12">
-                <input type="submit" value="Send us a message" class="form-control send" />
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <input type="submit" value="Send us a message" class="form-control send" />
+                </div>
               </div>
             </form>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-6 contact">
+          <a href="tel:1-847-555-5555">
+
+            <span id="telefonIcon"></span>020 898 898 89
+
+          </a>
+        </div>
+
+        <div class="col-xs-6 contact">
+          <a href="mailto:adres e-mail">
+
+              <span id="emailIcon"></span>hello-analytics@salestube.pl
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 
   <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
